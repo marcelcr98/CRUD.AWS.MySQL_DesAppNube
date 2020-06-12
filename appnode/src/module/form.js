@@ -76,7 +76,7 @@ class EditComponent extends React.Component{
   else {
 
     // url de backend
-    const baseUrl = "http://localhost:3000/employee/create"
+    const baseUrl = "http://3.83.227.144:4000/employee/create"
 
     // parametros de datos post
     const datapost = {

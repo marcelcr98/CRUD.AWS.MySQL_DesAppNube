@@ -1,8 +1,6 @@
 const Sequelize = require('sequelize');
 var sequelize = require('./database');
-// import Role for FK roleId
 var Role = require('./Role');
-// name table
 var nametable = 'empleado';
 
 var Employee = sequelize.define(nametable,{
@@ -16,10 +14,8 @@ var Employee = sequelize.define(nametable,{
   email: Sequelize.STRING,
   address: Sequelize.STRING,
   phone: Sequelize.BIGINT,
-  // LLAVE FORANEA
   roleId:{
     type: Sequelize.INTEGER,
-    // this is a refence to another model
     refences: {
       model: Role,
       key: 'id'

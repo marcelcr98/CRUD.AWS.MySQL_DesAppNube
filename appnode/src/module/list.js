@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
-const baseUrl = "http://localhost:3000"
+const baseUrl = "http://3.83.227.144:4000"
 
 class listComponent extends React.Component  {
 

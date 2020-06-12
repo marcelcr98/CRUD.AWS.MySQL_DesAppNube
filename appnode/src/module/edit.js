@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import axios from 'axios';
-const baseUrl = "http://localhost:3000"
+const baseUrl = "http://3.83.227.144:4000"
 
 class EditComponent extends React.Component{
 
@@ -23,7 +23,7 @@ class EditComponent extends React.Component{
   componentDidMount(){
     // parametro de id del usuario
     let userId = this.props.match.params.id;
-    // http://localhost:3000/employee/get/4
+    // http://http://3.83.227.144:4000/employee/get/4
     const url = baseUrl+"/employee/get/"+userId
     axios.get(url)
     .then(res=>{
@@ -95,7 +95,7 @@ class EditComponent extends React.Component{
     // get parameter id
     let userId = this.props.match.params.id;
     // url de backend
-    const baseUrl = "http://localhost:3000/employee/update/"+userId
+    const baseUrl = "http://http://3.83.227.144:4000/update/"+userId
     // parameter data post
     const datapost = {
       name: this.state.campName,

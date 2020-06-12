@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express(); 
 // setting port
-app.set('port',process.env.PORT||3000);
+app.set('port',process.env.PORT||4000);
 
 //Middlewares
 app.use(express.json());
@@ -25,9 +25,9 @@ app.use('/test', (req, res) => {
 });
 
 app.use('/', (req,res) => {
-  res.send("Hello world from Node.js Server");
+  res.send("Hola Mundo");
 });
 
 app.listen(app.get('port'),()=>{
-  console.log("Starting server Node.js");
+  console.log("Server Nodejs");
 })
